@@ -30,7 +30,7 @@ function perTimer() {
 }
 
 function setup() {
-    createCanvas(1920, 1080);
+    createCanvas(displayWidth, displayHeight);
 
     // MID - 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
     rhythmGenerator0 = new LFSR(20, 0, 1);
@@ -125,10 +125,10 @@ function draw() {
     textSize(48);
     textFont('Courier');
 
-    text(state0, 600, 400);
-    text(state1, 600, 450);
-    text(state2, 600, 500);
-    text(state3, 600, 550);
+    text(state0, displayWidth / 2 - 300, displayHeight / 2 - 150);
+    text(state1, displayWidth / 2 - 300, displayHeight / 2 - 100);
+    text(state2, displayWidth / 2 - 300, displayHeight / 2 - 50);
+    text(state3, displayWidth / 2 - 300, displayHeight / 2 - 0);
 
 
 }
