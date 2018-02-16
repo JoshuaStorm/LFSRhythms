@@ -20,3 +20,9 @@ LFSR.prototype.shift = function() {
     this.state.push(newVal);
     return retVal;
 }
+
+LFSR.prototype.shiftNoReplace = function() {
+    var retVal = this.state.shift();
+    this.state.push(0);
+    return retVal;
+}
